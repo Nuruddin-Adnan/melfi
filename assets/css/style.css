@@ -273,6 +273,12 @@ body {
           box-shadow: none;
 }
 
+.input-group .input-group-text {
+  background-color: transparent;
+  border: none;
+  color: rgba(45, 45, 67, 0.5);
+}
+
 .input-group .form-control {
   border: none;
   background-color: transparent;
