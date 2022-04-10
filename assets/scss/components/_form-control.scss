@@ -1,0 +1,31 @@
+@import '../abstracts/mixins';
+
+.input-group {
+    background-color: rgba($color-dark, .08);
+    border-radius: 10px;
+
+    .dropdown-toggle {
+        border: none;
+        border-right: 1px solid rgba(#2D2D43, 0.09);
+        @include font-style(15px, 400, $color-text-dark);
+        background-color: transparent;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .form-control {
+        border: none;
+        background-color: transparent;
+        min-height: 50px;
+        @include font-style(16px, 400, rgba(#2D2D43, 1));
+        ::placeholder {
+            @include font-style(16px, 400, rgba(#2D2D43, 0.5));
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}

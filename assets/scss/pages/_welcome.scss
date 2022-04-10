@@ -1,0 +1,33 @@
+.welcome {
+    .title {
+        font-size: 30px;
+    }
+    .title-description {
+        font-size: 20px;
+    }
+
+    .mian-content {
+        min-height: calc(100vh - 250px);
+        padding-bottom: 80px;
+    }
+
+    img {
+        position: absolute;
+        z-index: -1;
+        &.top-right {
+            top: -100px;
+            right: -100px;
+        }
+        &.bottom-right {
+            bottom: -100px;
+            right: -100px;
+        }
+        &.bottom-left {
+            bottom: -100px;
+            left: -100px;
+        }
+    }
+}
+
+
+

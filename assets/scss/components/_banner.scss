@@ -1,0 +1,18 @@
+.banner {
+    min-height: 250px;
+    background-color: $color-dark;
+    position: relative;
+    display: grid;
+    place-items: center;
+
+    &::before {
+        content: '';
+        width: 40px;
+        height: 40px;
+        background-color: $color-dark;
+        position: absolute;
+        bottom: -16px;
+        left: 40px;
+        transform: rotate(45deg);
+    }
+}

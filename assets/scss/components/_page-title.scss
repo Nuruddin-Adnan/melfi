@@ -1,0 +1,8 @@
+@import '../abstracts/mixins';
+
+.title {
+    @include font-style(24px, 700, $color-text-dark);
+}
+.title-description {
+    @include font-style(14px, 400, rgba($color-text-dark, 0.6))
+}

@@ -1,0 +1,10 @@
+@import '../abstracts/mixins';
+
+.page-footer {
+    @include font-style(12px, 400, $color-text-dark);
+
+    a {
+        color: $color-pink;
+        text-decoration: underline;
+    }
+}

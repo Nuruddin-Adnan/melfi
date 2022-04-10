@@ -1,0 +1,39 @@
+@import '../abstracts/mixins';
+
+.btn {
+    @include font-style(18px, 500, $color-text-dark);
+    min-height: 50px;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 50px;
+
+    &.dark {
+        background-color: $color-dark;
+        color: $color-pink;
+
+        &:hover {
+            background-color: darken($color-dark, 5);
+        }
+    }
+    &.pink {
+        background-color: $color-pink;
+        color: $color-text-dark;
+        border-color: $color-pink;
+
+        &:hover {
+            background-color: darken($color-pink, 5);
+        }
+    }
+    &.pink-outline {
+        background-color: transparent;
+        color: $color-pink;
+        border-color: $color-pink;
+
+        &:hover {
+            background-color: $color-pink;
+            color: $color-text-dark;
+        }
+    }
+}
