@@ -36,9 +36,39 @@ body {
   margin: auto;
 }
 
+.px-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.px-50 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .px-60 {
   padding-left: 60px;
   padding-right: 60px;
+}
+
+.px-70 {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.px-80 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.px-90 {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.px-100 {
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .py-50 {
@@ -164,7 +194,7 @@ body {
   font-weight: 500;
   color: #1D2226;
   min-height: 50px;
-  border: 1px solid #707070;
+  border: 1px solid transparent;
   border-radius: 10px;
   padding-top: 0;
   padding-bottom: 0;
@@ -338,6 +368,62 @@ body {
 .input-group .form-control:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.onboarding, .referral {
+  min-height: 100vh;
+  padding: 50px 1rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.onboarding .top-action, .referral .top-action {
+  width: 100%;
+}
+
+.onboarding .top-action i, .referral .top-action i {
+  font-size: 20px;
+  color: #0E0325;
+}
+
+.onboarding .img, .referral .img {
+  max-width: 400px;
+  margin: auto;
+}
+
+.onboarding p, .referral p {
+  font-size: 16px;
+  color: #707070;
+  padding: 50px 0;
+}
+
+.onboarding, .referral {
+  min-height: 100vh;
+  padding: 50px 1rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.onboarding .top-action, .referral .top-action {
+  width: 100%;
+}
+
+.onboarding .top-action i, .referral .top-action i {
+  font-size: 20px;
+  color: #0E0325;
+}
+
+.onboarding .img, .referral .img {
+  max-width: 400px;
+  margin: auto;
+}
+
+.onboarding p, .referral p {
+  font-size: 16px;
+  color: #707070;
+  padding: 50px 0;
 }
 
 /*===// end of components css === */

@@ -1,0 +1,24 @@
+.onboarding {
+    min-height: 100vh;
+    padding: 50px 1rem;
+    display: grid;
+    place-items: center;
+    .top-action {
+        width: 100%;
+        i {
+            font-size: 20px;
+            color: #0E0325;
+        }
+    }
+
+    .img {
+        max-width: 400px;
+        margin: auto;
+    }
+
+    p {
+        font-size: 16px;
+        color: #707070;
+        padding: 50px 0;
+    }
+}

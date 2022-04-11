@@ -1,0 +1,6 @@
+// .referral
+@import './onboarding';
+
+.referral {
+    @extend .onboarding;
+}
