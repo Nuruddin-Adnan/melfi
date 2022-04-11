@@ -252,6 +252,72 @@ body {
           transform: rotate(45deg);
 }
 
+.banner.menu-banner {
+  position: relative;
+}
+
+.banner.menu-banner .back-btn {
+  font-size: 20px;
+  color: #E393F6;
+  position: absolute;
+  top: 35%;
+  left: 40px;
+}
+
+.banner.menu-banner .logo {
+  max-width: 85px;
+  display: block;
+}
+
+.banner.menu-banner .profile-img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  margin: 40px auto 20px auto;
+}
+
+.banner.menu-banner .profile-name {
+  font-size: 20px;
+  color: #E393F6;
+}
+
+.banner.menu-banner.bg-pink {
+  background-color: #E393F6;
+}
+
+.banner.menu-banner.bg-pink::before {
+  background-color: #E393F6;
+}
+
+.banner.menu-banner.bg-pink .logo {
+  mix-blend-mode: difference;
+}
+
+.banner.menu-banner.bg-pink .profile-name,
+.banner.menu-banner.bg-pink .back-btn {
+  color: #0E0325;
+}
+
+.banner.menu-banner.bg-white {
+  background-color: #fff;
+}
+
+.banner.menu-banner.bg-white::before {
+  background-color: transparent;
+}
+
+.banner.menu-banner.bg-white .logo {
+  opacity: 0;
+}
+
+.banner.menu-banner.bg-white .profile-name,
+.banner.menu-banner.bg-white .back-btn {
+  color: #0E0325;
+}
+
 .title {
   font-size: 24px;
   font-weight: 700;
@@ -370,7 +436,7 @@ body {
           box-shadow: none;
 }
 
-.onboarding, .referral {
+.onboarding, .referral-screen {
   min-height: 100vh;
   padding: 50px 1rem;
   display: -ms-grid;
@@ -378,27 +444,27 @@ body {
   place-items: center;
 }
 
-.onboarding .top-action, .referral .top-action {
+.onboarding .top-action, .referral-screen .top-action {
   width: 100%;
 }
 
-.onboarding .top-action i, .referral .top-action i {
+.onboarding .top-action i, .referral-screen .top-action i {
   font-size: 20px;
   color: #0E0325;
 }
 
-.onboarding .img, .referral .img {
+.onboarding .img, .referral-screen .img {
   max-width: 400px;
   margin: auto;
 }
 
-.onboarding p, .referral p {
+.onboarding p, .referral-screen p {
   font-size: 16px;
   color: #707070;
   padding: 50px 0;
 }
 
-.onboarding, .referral {
+.onboarding, .referral-screen {
   min-height: 100vh;
   padding: 50px 1rem;
   display: -ms-grid;
@@ -406,24 +472,49 @@ body {
   place-items: center;
 }
 
-.onboarding .top-action, .referral .top-action {
+.onboarding .top-action, .referral-screen .top-action {
   width: 100%;
 }
 
-.onboarding .top-action i, .referral .top-action i {
+.onboarding .top-action i, .referral-screen .top-action i {
   font-size: 20px;
   color: #0E0325;
 }
 
-.onboarding .img, .referral .img {
+.onboarding .img, .referral-screen .img {
   max-width: 400px;
   margin: auto;
 }
 
-.onboarding p, .referral p {
+.onboarding p, .referral-screen p {
   font-size: 16px;
   color: #707070;
   padding: 50px 0;
+}
+
+.menu-list li {
+  border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+}
+
+.menu-list li:first-child {
+  border-top: 1px solid rgba(112, 112, 112, 0.2);
+}
+
+.menu-list li a {
+  text-align: left;
+  padding: 30px 10px 30px 50px;
+  display: block;
+  color: #0E0325;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.menu-list li a:hover {
+  color: #E393F6;
+}
+
+.menu-list li a img {
+  padding-right: 20px;
 }
 
 /*===// end of components css === */

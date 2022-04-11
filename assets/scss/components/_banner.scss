@@ -15,4 +15,68 @@
         left: 40px;
         transform: rotate(45deg);
     }
+
+    &.menu-banner{
+        position: relative;
+        .back-btn {
+            font-size: 20px;
+            color: $color-pink;
+            position: absolute;
+            top: 35%;
+            left: 40px;
+        }
+
+        .logo {
+            max-width:85px;
+            display: block;
+        }
+        .profile-img {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 40px auto 20px auto;
+        }
+        .profile-name {
+            font-size: 20px;
+            color: $color-pink;
+        }
+
+        // bg-pink
+        &.bg-pink {
+            background-color: $color-pink;
+
+            &::before {
+                background-color: $color-pink;
+            }
+
+            .logo {
+                mix-blend-mode: difference;
+            }
+
+            .profile-name,
+            .back-btn {
+                color: #0E0325;
+            }
+        }
+
+        // bg-white
+        &.bg-white {
+            background-color: $color-white;
+
+            &::before {
+                background-color: transparent;
+            }
+
+            .logo {
+               opacity: 0;
+            }
+
+            .profile-name,
+            .back-btn {
+                color: #0E0325;
+            }
+        }
+    }
 }
