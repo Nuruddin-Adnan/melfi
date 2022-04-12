@@ -4,3 +4,52 @@
 .referral-screen {
     @extend .onboarding;
 }
+
+
+.referral {
+    p {
+        font-size: 18px;
+        color: #0E0325;
+    }
+
+    .input-group {
+        background: $color-pink;
+        .form-control {
+            font-size: 20px;
+            color: $color-white;
+        }
+        .btn {
+            color: $color-white;
+            border-left: 1px solid $color-white;
+        }
+    }
+
+    .divider {
+        position: relative;
+        span {
+            font-size: 18px;
+            color: rgba(#0E0325, 0.2);
+            background: $color-white;
+            padding: 0 0.5rem;
+        }
+
+        &::before {
+            content: '';
+            width: 80%;
+            height: 1px;
+            background-color: rgba(#0E0325, 0.2);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+    }
+
+    .social-link {
+        a {
+            margin: 0 20px;
+        }
+    }
+}
+// referral end

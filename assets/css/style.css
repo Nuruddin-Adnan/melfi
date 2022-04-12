@@ -36,6 +36,16 @@ body {
   margin: auto;
 }
 
+.px-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.px-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .px-40 {
   padding-left: 40px;
   padding-right: 40px;
@@ -101,6 +111,21 @@ body {
   padding-bottom: 100px;
 }
 
+.my-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.my-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.my-40 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .my-50 {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -131,6 +156,18 @@ body {
   margin-bottom: 100px;
 }
 
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
 .mt-50 {
   margin-top: 50px;
 }
@@ -153,6 +190,18 @@ body {
 
 .mt-100 {
   margin-top: 100px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
 }
 
 .mb-50 {
@@ -187,6 +236,30 @@ body {
   height: 2px !important;
 }
 
+.step-1 {
+  width: 16.6666666667%;
+}
+
+.step-2 {
+  width: 33.3333333334%;
+}
+
+.step-3 {
+  width: 50.0000000001%;
+}
+
+.step-4 {
+  width: 66.6666666668%;
+}
+
+.step-5 {
+  width: 83.3333333335%;
+}
+
+.step-6 {
+  width: 100%;
+}
+
 /*===// end of base css === */
 /*=== components css start === */
 .btn {
@@ -199,6 +272,14 @@ body {
   padding-top: 0;
   padding-bottom: 0;
   line-height: 50px;
+}
+
+.btn.light {
+  background-color: #EDEDEE;
+}
+
+.btn.light:hover {
+  background-color: #e0e0e2;
 }
 
 .btn.dark {
@@ -301,21 +382,43 @@ body {
   color: #0E0325;
 }
 
-.banner.menu-banner.bg-white {
+.banner.menu-banner.bg-white, .banner.referral-banner.bg-white {
   background-color: #fff;
 }
 
-.banner.menu-banner.bg-white::before {
+.banner.menu-banner.bg-white::before, .banner.referral-banner.bg-white::before {
   background-color: transparent;
 }
 
-.banner.menu-banner.bg-white .logo {
+.banner.menu-banner.bg-white .logo, .banner.referral-banner.bg-white .logo {
   opacity: 0;
 }
 
-.banner.menu-banner.bg-white .profile-name,
-.banner.menu-banner.bg-white .back-btn {
+.banner.menu-banner.bg-white .profile-name, .banner.referral-banner.bg-white .profile-name,
+.banner.menu-banner.bg-white .back-btn,
+.banner.referral-banner.bg-white .back-btn {
   color: #0E0325;
+}
+
+.banner.referral-banner {
+  position: relative;
+}
+
+.banner.referral-banner .back-btn {
+  font-size: 20px;
+  color: #E393F6;
+  position: absolute;
+  top: 32%;
+  left: 20px;
+}
+
+.banner.referral-banner.bg-white {
+  border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+}
+
+.banner.referral-banner.bg-white .logo {
+  opacity: 1;
+  margin-bottom: -50px;
 }
 
 .title {
@@ -492,6 +595,53 @@ body {
   padding: 50px 0;
 }
 
+.referral p {
+  font-size: 18px;
+  color: #0E0325;
+}
+
+.referral .input-group {
+  background: #E393F6;
+}
+
+.referral .input-group .form-control {
+  font-size: 20px;
+  color: #fff;
+}
+
+.referral .input-group .btn {
+  color: #fff;
+  border-left: 1px solid #fff;
+}
+
+.referral .divider {
+  position: relative;
+}
+
+.referral .divider span {
+  font-size: 18px;
+  color: rgba(14, 3, 37, 0.2);
+  background: #fff;
+  padding: 0 0.5rem;
+}
+
+.referral .divider::before {
+  content: '';
+  width: 80%;
+  height: 1px;
+  background-color: rgba(14, 3, 37, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.referral .social-link a {
+  margin: 0 20px;
+}
+
 .menu-list li {
   border-bottom: 1px solid rgba(112, 112, 112, 0.2);
 }
@@ -515,6 +665,108 @@ body {
 
 .menu-list li a img {
   padding-right: 20px;
+}
+
+.time .input-group .form-control {
+  color: #0E0325;
+  font-weight: 600;
+  text-align: center;
+}
+
+.time .input-group .form-control::-webkit-input-placeholder {
+  color: #0E0325;
+  font-weight: 600;
+}
+
+.time .input-group .form-control:-ms-input-placeholder {
+  color: #0E0325;
+  font-weight: 600;
+}
+
+.time .input-group .form-control::-ms-input-placeholder {
+  color: #0E0325;
+  font-weight: 600;
+}
+
+.time .input-group .form-control::placeholder {
+  color: #0E0325;
+  font-weight: 600;
+}
+
+.time .time-row::before {
+  content: ":";
+  position: absolute;
+  font-size: 50px;
+  font-weight: 700;
+  color: #dedede;
+  top: 33px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.describe .form-control {
+  border: 1px solid rgba(112, 112, 112, 0.2);
+  border-radius: 10px;
+}
+
+.describe .form-control::-webkit-input-placeholder {
+  font-size: 14px;
+  color: rgba(29, 34, 38, 0.2);
+}
+
+.describe .form-control:-ms-input-placeholder {
+  font-size: 14px;
+  color: rgba(29, 34, 38, 0.2);
+}
+
+.describe .form-control::-ms-input-placeholder {
+  font-size: 14px;
+  color: rgba(29, 34, 38, 0.2);
+}
+
+.describe .form-control::placeholder {
+  font-size: 14px;
+  color: rgba(29, 34, 38, 0.2);
+}
+
+.photo .profie-image .avatar {
+  width: 144px;
+  height: 144px;
+  margin: auto;
+  border: 1px solid rgba(227, 147, 246, 0.3);
+  border-radius: 50%;
+  position: relative;
+}
+
+.photo .profie-image .avatar label {
+  width: 23px;
+  height: 23px;
+  border: 2px solid #E393F6;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 10px;
+  color: #E393F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.photo .profie-image #avatar-input {
+  display: none;
 }
 
 /*===// end of components css === */

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>referral</title>
+  <link rel='shortcut icon' href='assets/images/logo.svg' type='image/x-icon'>
+  <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- === header section start === -->
+  <header class="header">
+    <div class="banner referral-banner bg-white">
+      <a href="#" class="btn back-btn"><i class="fas fa-long-arrow-left"></i></a>
+      <img src="assets/images/logo.svg" alt="logo" class="img-fluid logo">
+    </div>
+  </header>
+  <!-- ===//end of header section === -->
+ 
+
+  <!-- === referral section start === -->
+  <section class="referral">
+    <div class="mian-content px-40 py-50 position-relative overflow-hidden">
+      <p>Share and invite your friends </p>
+      <div class="px-20">
+        <div class="input-group mt-50">
+          <input type="text" id="copy-text" class="form-control" class="form-control" value="melfi.com/rKmzRtaF" onclick="this.select();">
+          <button id="copy-btn" class="btn" type="button" onclick="copyText();"><i class="far fa-copy"></i></button>
+        </div>
+      </div>
+      <div class="divider mt-30 mb-20"><span>OR</span></div>
+      <p>Share on social media</p>
+
+      <div class="social-link mt-30">
+        <a href="#">
+          <img src="assets/images/icon/social-icon/google-plus-official.svg" alt="icon" class="img-fluid">
+        </a>
+        <a href="#">
+          <img src="assets/images/icon/social-icon//facebook-with-circle.svg" alt="icon" class="img-fluid">
+        </a>
+        <a href="#">
+          <img src="assets/images/icon/social-icon/whatsapp.svg" alt="icon" class="img-fluid">
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ===//end of referral section === -->
+
+
+  <script src="assets/vendor/bootstrap/js/popper.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    function copyText(){ 
+      const copyText = document.getElementById("copy-text");
+      copyText.select();
+      document.execCommand('copy');
+      alert('Copied');
+    }
+  </script>
+</body>
+</html>

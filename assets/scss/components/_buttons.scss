@@ -9,6 +9,13 @@
     padding-bottom: 0;
     line-height: 50px;
 
+    &.light {
+        background-color: $color-light;
+
+        &:hover {
+            background-color: darken($color-light, 5);
+        }
+    }
     &.dark {
         background-color: $color-dark;
         color: $color-pink;

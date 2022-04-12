@@ -16,6 +16,8 @@
         transform: rotate(45deg);
     }
 
+
+    // menu banner start
     &.menu-banner{
         position: relative;
         .back-btn {
@@ -79,4 +81,31 @@
             }
         }
     }
+    // menu banner end
+
+
+     // referral banner start
+     &.referral-banner {
+        position: relative;
+        .back-btn {
+            font-size: 20px;
+            color: $color-pink;
+            position: absolute;
+            top: 32%;
+            left: 20px;
+        }
+
+        &.bg-white {
+            @extend .menu-banner.bg-white;
+
+            border-bottom: 1px solid rgba(#707070, 0.2);
+            .logo {
+                opacity: 1;
+                margin-bottom: -50px;
+            }
+        }
+     }
+    // referral banner end
+
+
 }

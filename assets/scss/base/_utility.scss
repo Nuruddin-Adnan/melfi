@@ -1,5 +1,13 @@
 // padding
 // py
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.px-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
 .px-40 {
     padding-left: 40px;
     padding-right: 40px;
@@ -58,6 +66,18 @@
 
 // margin
 // my
+.my-20{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.my-30{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.my-40{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 .my-50{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -85,6 +105,15 @@
 
 
 // margin top
+.mt-20{
+    margin-top: 20px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.mt-40{
+    margin-top: 40px;
+}
 .mt-50{
     margin-top: 50px;
 }
@@ -105,6 +134,15 @@
 }
 
 // margin bottom
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
 .mb-50{
     margin-bottom: 50px;
 }
@@ -134,5 +172,25 @@
 // height
 .h-2px {
     height: 2px !important;
+}
+
+// width
+.step-1{
+    width: 16.6666666667%;
+}
+.step-2{
+    width: 33.3333333334%;
+}
+.step-3{
+    width: 50.0000000001%;
+}
+.step-4{
+    width: 66.6666666668%;
+}
+.step-5{
+    width: 83.3333333335%;
+}
+.step-6{
+    width: 100%;
 }
 
