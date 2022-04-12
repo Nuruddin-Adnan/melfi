@@ -693,6 +693,13 @@ body {
   font-weight: 600;
 }
 
+@media (max-width: 375px) {
+  .time .input-group .form-control {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
 .time .time-row::before {
   content: ":";
   position: absolute;
@@ -737,6 +744,14 @@ body {
   border: 1px solid rgba(227, 147, 246, 0.3);
   border-radius: 50%;
   position: relative;
+}
+
+.photo .profie-image .avatar .avatar-img {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .photo .profie-image .avatar label {

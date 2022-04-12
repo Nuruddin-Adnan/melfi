@@ -35,10 +35,10 @@
       </div>
       <div class="profie-image my-30">
         <div class="avatar">
-          <img src="assets/images/avatar.png" alt="profile image" class="img-fluid avatar-img">
+          <img src="assets/images/avatar.png" alt="profile image" id="avatar-img" class="img-fluid avatar-img">
           <label for="avatar-input"><i class="far fa-camera"></i></label>
         </div>
-        <input type="file" id="avatar-input" accept="image/png, image/gif, image/jpeg">
+        <input type="file" id="avatar-input" accept="image/png, image/gif, image/jpeg"  onchange="document.getElementById('avatar-img').src = window.URL.createObjectURL(this.files[0])">
       </div>
       <a href="index.html" class="btn pink w-100 mb-3">Next</a>
     </div>

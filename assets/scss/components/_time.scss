@@ -8,6 +8,11 @@
                 color: #0E0325;
                 font-weight: 600;
             }
+
+            @media(max-width: 375px){
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
         }
     }
 

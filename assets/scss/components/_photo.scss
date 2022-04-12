@@ -8,6 +8,13 @@
             border-radius: 50%;
             position: relative;
 
+            .avatar-img {
+                width: inherit;
+                height: inherit;
+                border-radius: inherit;
+                object-fit: cover;
+            }
+
             label {
                 width: 23px;
                 height: 23px;
