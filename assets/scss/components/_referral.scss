@@ -9,7 +9,7 @@
 .referral {
     p {
         font-size: 18px;
-        color: #0E0325;
+        color: $color-dark-blue;
     }
 
     .input-group {
@@ -28,7 +28,7 @@
         position: relative;
         span {
             font-size: 18px;
-            color: rgba(#0E0325, 0.2);
+            color: rgba($color-dark-blue, 0.2);
             background: $color-white;
             padding: 0 0.5rem;
         }
@@ -37,7 +37,7 @@
             content: '';
             width: 80%;
             height: 1px;
-            background-color: rgba(#0E0325, 0.2);
+            background-color: rgba($color-dark-blue, 0.2);
             position: absolute;
             top: 50%;
             left: 50%;

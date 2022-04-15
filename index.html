@@ -10,36 +10,55 @@
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body id="index">
 
-  <!-- === header section start === -->
-  <header class="header">
-    <div class="banner">
-      <img src="assets/images/logo.svg" alt="logo" class="img-fluid logo">
-    </div>
-  </header>
-  <!-- ===//end of header section === -->
- 
-
-  <!-- === welcome section start === -->
-  <section class="welcome">
-    <div class="mian-content px-60 position-relative overflow-hidden">
-      <div class="heading py-5">
-        <h1 class="title">Welcome !</h1>
-        <p class="title-description">Please login to your account.</p>
+  <div class="desktop d-lg-block d-none">
+    <div class="container">
+      <div class="row h-100vh align-items-center">
+        <div class="col-lg-6">
+          <a href="#" class="mb-3"><img src="assets/images/desktop/app-store.png" alt="download" class="img-fluid"></a>
+          <a href="#"><img src="assets/images/desktop/play-store.png" alt="download" class="img-fluid"></a>
+        </div>
+        <div class="col-lg-6">
+          <div class="phone">
+            <iframe src="index-2.html" frameborder="0" class="phone-frame"></iframe>
+          </div>
+        </div>
       </div>
-      <a href="#" class="btn dark w-100 mb-3">Login</a>
-      <a href="phone-number.html" class="btn dark w-100">Signup</a>
-      <hr class="w-75 mx-auto my-4 bg-pink h-2px">
-      <a href="#" class="btn pink-outline w-100 mb-3">How it works</a>
-      <a href="#" class="btn pink-outline w-100">Refer a friend</a>
-
-      <img src="assets/images/Ellipse.svg" alt="Ellipse" class="img-fluid top-right">
-      <img src="assets/images/Ellipse.svg" alt="Ellipse" class="img-fluid bottom-right">
-      <img src="assets/images/Ellipse.svg" alt="Ellipse" class="img-fluid bottom-left">
     </div>
-  </section>
-  <!-- ===//end of welcome section === -->
+   
+  </div>
+
+  <div class="mobile d-lg-none d-block">
+    <!-- === header section start === -->
+    <header class="header">
+      <div class="banner">
+        <img src="assets/images/logo.svg" alt="logo" class="img-fluid logo">
+      </div>
+    </header>
+    <!-- ===//end of header section === -->
+  
+
+    <!-- === welcome section start === -->
+    <section class="welcome">
+      <div class="mian-content px-60 position-relative overflow-hidden">
+        <div class="heading py-5">
+          <h1 class="title">Welcome !</h1>
+          <p class="title-description">Please login to your account.</p>
+        </div>
+        <a href="phone-number.html" class="btn dark w-100 mb-3">Login</a>
+        <a href="name.html" class="btn dark w-100">Signup</a>
+        <hr class="w-75 mx-auto my-4 bg-pink h-2px">
+        <a href="onboarding-1.html" class="btn pink-outline w-100 mb-3">How it works</a>
+        <a href="referral-screen-1.html" class="btn pink-outline w-100">Refer a friend</a>
+
+        <img src="assets/images/Ellipse.svg" alt="Ellipse" class="img-fluid top-right">
+        <img src="assets/images/Ellipse.svg" alt="Ellipse" class="img-fluid bottom-right">
+        <img src="assets/images/Ellipse.svg" alt="Ellipse" class="img-fluid bottom-left">
+      </div>
+    </section>
+    <!-- ===//end of welcome section === -->
+  </div>
 
 
   <script src="assets/vendor/bootstrap/js/popper.js"></script>

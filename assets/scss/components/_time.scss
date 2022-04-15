@@ -1,11 +1,11 @@
 .time {
     .input-group {
         .form-control{
-            color: #0E0325;
+            color: $color-dark-blue;
             font-weight: 600;
             text-align: center;
             &::placeholder {
-                color: #0E0325;
+                color: $color-dark-blue;
                 font-weight: 600;
             }
 
